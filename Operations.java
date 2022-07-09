@@ -39,6 +39,7 @@ public class Operations {
         System.out.println("\nAfter:");
         linkedList.print();
     }
+
     public static void deleteLastNode() {
         System.out.println("Before:");
         LinkedList linkedList = addDataAtStart();
@@ -47,4 +48,8 @@ public class Operations {
         linkedList.print();
     }
 
+    public static void findNodeBasedOnValue() {
+        LinkedList linkedList = addDataAtStart();
+        linkedList.searchNode(30);
+    }
 }
