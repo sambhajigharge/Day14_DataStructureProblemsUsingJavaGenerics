@@ -1,7 +1,17 @@
 package DataStructure.LinkedList;
 
 public class Node {
-    public static void main(String[] args) {
-        System.out.println("Welcome to the Linked List Data Structure Program");
+    public int data;
+    public Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" + "data=" + data + ", next=" + next + '}';
     }
 }
+
