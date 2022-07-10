@@ -54,7 +54,7 @@ public class Operations {
     }
 
     public static LinkedList insertAfterSearchNode() {
-        System.out.println("Before:");
+        System.out.println("Before");
         LinkedList linkedList = addDataAtStart();
         Node newNode = new Node(40);
         linkedList.searchNodeAt(30, newNode);
@@ -67,6 +67,14 @@ public class Operations {
         LinkedList linkedList = insertAfterSearchNode();
         System.out.println("\nAfter Delete");
         linkedList.deleteANode(40);
+        linkedList.print();
+    }
+
+    public static void sortList() {
+        System.out.println("Before sorting the list");
+        LinkedList linkedList = insertAfterSearchNode();
+        linkedList.sort();
+        System.out.println("\nAfter sorting the list");
         linkedList.print();
     }
 }
