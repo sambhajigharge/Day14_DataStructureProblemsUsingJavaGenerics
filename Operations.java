@@ -53,12 +53,20 @@ public class Operations {
         linkedList.searchNode(30);
     }
 
-    public static void insertAfterSearchNode() {
+    public static LinkedList insertAfterSearchNode() {
         System.out.println("Before:");
         LinkedList linkedList = addDataAtStart();
         Node newNode = new Node(40);
         linkedList.searchNodeAt(30, newNode);
-        System.out.println("\nAfter");
+        System.out.println("\nAfter Insertion");
+        linkedList.print();
+        return linkedList;
+    }
+
+    public static void deleteAfterNodeAfterSearchNode() {
+        LinkedList linkedList = insertAfterSearchNode();
+        System.out.println("\nAfter Delete");
+        linkedList.deleteANode(40);
         linkedList.print();
     }
 }
